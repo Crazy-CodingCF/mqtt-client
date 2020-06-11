@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++0x -W -fPIC
 
 CXX_DEFINES = -Dmqtt1_1_EXPORTS
 
-CXX_INCLUDES = -I/home/dev/mqtt-client/include -I/home/dev/mqtt-client/libs/x64/boost/include -I/home/dev/mqtt-client/libs/x64/mqtt/include -I/home/dev/mqtt-client/libs/x64/glog/include -I/home/dev/mqtt-client/libs/x64/jsoncpp/include -I/home/dev/mqtt-client/libs/x64/openssl/include -I/home/dev/mqtt-client/build 
+CXX_INCLUDES = -I/home/dev/mqtt-client/include -I/home/dev/mqtt-client/libs/x64/mqtt/include -I/home/dev/mqtt-client/libs/x64/glog/include -I/home/dev/mqtt-client/libs/x64/jsoncpp/include -I/home/dev/mqtt-client/libs/x64/openssl/include -I/home/dev/mqtt-client/build 
 
