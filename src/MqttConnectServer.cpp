@@ -260,23 +260,24 @@ int CMqttService::MqttInit()
     char ADDRESS[100] = {"0"};
     char cachPath[50] = "./";
 
-    g_server_info.configName = "demo";
+    //----------------------------------------------------------------------连接配置
+    g_server_info.configName = "demo";                
     g_server_info.platform = "ali";
-    g_server_info.serverUrl = "39.99.57.4";
-    g_server_info.clientId = "demo_test_caofei";
+    g_server_info.serverUrl = "a1GLgYhwIHp.iot-as-mqtt.cn-shanghai.aliyuncs.com";
+    g_server_info.clientId = "123456|securemode=3,signmethod=hmacsha1,timestamp=123456|";
     g_server_info.mqttVersion = "3.1.1";
     g_server_info.connectType = "raw_tcp";
     g_server_info.store = "local";
     g_server_info.pub_mode = "interval";
 
-    g_server_info.serverPort = 10001;
+    g_server_info.serverPort = 1883;
     g_server_info.keepAlive = 60;
     g_server_info.offlineCaching = false;
     g_server_info.withAuthen = true;
-    g_server_info.pub_interval = 15*1000;
+    g_server_info.pub_interval = 10;
 
-    g_server_info.userName = "caofei";
-    g_server_info.passWord = "123456789";
+    g_server_info.userName = "my_device&a1GLgYhwIHp";
+    g_server_info.passWord = "CD65753B0A662997C90D2AFE4D400DAB0BAB78D1";
 
     MQTTAsync_createOptions create_opts = MQTTAsync_createOptions_initializer;
     MQTTAsync_SSLOptions sslopts = MQTTAsync_SSLOptions_initializer;

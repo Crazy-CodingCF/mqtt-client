@@ -39,8 +39,8 @@ extern MQTTAsync client;
                                  "local",     false,       " ",\
                                  " ",         "interval",  20}
 
-#define topic_sub                        "ali/get/data"
-#define topic_pub                        "ali/pub/data"
+#define topic_sub       "/sys/a1GLgYhwIHp/my_device/thing/service/property/set"
+#define topic_pub       "/sys/a1GLgYhwIHp/my_device/thing/event/property/post"
 
 
 /** Handles all functions related to MQTT links */

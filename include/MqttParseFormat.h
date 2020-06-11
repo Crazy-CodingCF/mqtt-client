@@ -28,6 +28,8 @@ class CMqttFormatParse
 		int InitQueue();
 
 	private:
+        string GetMyPostMessageTrue();
+        string GetMyPostMessageFalse();
 };
 
 #endif
