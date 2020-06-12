@@ -42,12 +42,10 @@ if(PLATFORM MATCHES "arm")
     include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/arm/mqtt/include)
     include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/arm/glog/include)
     include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/arm/jsoncpp/include)
-    include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/arm/openssl/include)
 
     link_directories(${CMAKE_CURRENT_LIST_DIR}/libs/arm/mqtt/lib)
     link_directories(${CMAKE_CURRENT_LIST_DIR}/libs/arm/glog/lib)
     link_directories(${CMAKE_CURRENT_LIST_DIR}/libs/arm/jsoncpp/lib)
-    link_directories(${CMAKE_CURRENT_LIST_DIR}/libs/arm/openssl/lib)
 else()
     if(USE_LOG)
         add_definitions(-DUSE_LOG)
@@ -61,19 +59,12 @@ else()
     include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/x64/mqtt/include)
     include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/x64/glog/include)
     include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/x64/jsoncpp/include)
-    include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/x64/openssl/include)
 
     link_directories(${CMAKE_CURRENT_LIST_DIR}/libs/x64/mqtt/lib)
     link_directories(${CMAKE_CURRENT_LIST_DIR}/libs/x64/glog/lib)
     link_directories(${CMAKE_CURRENT_LIST_DIR}/libs/x64/jsoncpp/lib)
-    link_directories(${CMAKE_CURRENT_LIST_DIR}/libs/x64/openssl/lib)
 endif()
 
-
-#The version number
-#set(VERSION_MAJOR 1) #主版本
-#set(VERSION_MINOR 2)   #次版本
-#set(VERSION_RELEASE 0) #发布版本
 
 #通过cmake配置文件获取宏并生成头文件
 configure_file(
