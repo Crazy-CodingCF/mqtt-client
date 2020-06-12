@@ -1,4 +1,0 @@
-/home/dev/mqtt-client/build/CMakeFiles/rebuild_cache.dir
-/home/dev/mqtt-client/build/CMakeFiles/edit_cache.dir
-/home/dev/mqtt-client/build/CMakeFiles/mqtt1.1.dir
-/home/dev/mqtt-client/build/CMakeFiles/mqtt_alink.dir

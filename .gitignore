@@ -31,4 +31,9 @@
 *.out
 *.app
 
+# mine
 build/
+tags/
+libmqtt1.1.tar.gz
+docs/
+Doxyfile
